@@ -1,11 +1,29 @@
 @startuml
 
+left to right direction
+
 actor Administrador
 
-Administrador --> (Registrar Producto)
-Administrador --> (Consultar Productos)
-Administrador --> (Actualizar Producto)
-Administrador --> (Eliminar Producto)
+Administrador --> (Gestionar Productos)
+Administrador --> (Gestionar Categorias)
+Administrador --> (Gestionar Clientes)
 Administrador --> (Registrar Venta)
+
+(Gestionar Productos) ..> (Registrar Producto) : <<include>>
+(Gestionar Productos) ..> (Consultar Productos) : <<include>>
+(Gestionar Productos) ..> (Actualizar Producto) : <<include>>
+(Gestionar Productos) ..> (Eliminar Producto) : <<include>>
+
+(Gestionar Categorias) ..> (Registrar Categoria) : <<include>>
+(Gestionar Categorias) ..> (Actualizar Categoria) : <<include>>
+(Gestionar Categorias) ..> (Consultar Categorias) : <<include>>
+
+(Gestionar Clientes) ..> (Registrar Cliente) : <<include>>
+(Gestionar Clientes) ..> (Actualizar Cliente) : <<include>>
+(Gestionar Clientes) ..> (Consultar Clientes) : <<include>>
+
+(Registrar Venta) ..> (Seleccionar Cliente) : <<include>>
+(Registrar Venta) ..> (Agregar Producto a Venta) : <<include>>
+(Registrar Venta) ..> (Calcular Total Venta) : <<include>>
 
 @enduml
