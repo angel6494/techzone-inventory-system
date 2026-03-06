@@ -1,26 +1,62 @@
 @startuml
 
-class Producto {
-    +Id : int
-    +Nombre : string
-    +Marca : string
-    +Precio : decimal
-    +Stock : int
-}
-
 class Categoria {
     +Id : int
     +Nombre : string
     +Descripcion : string
+
+    +CrearCategoria()
+    +ActualizarCategoria()
+}
+
+class Producto {
+    +Id : int
+    +Nombre : string
+    +Marca : string
+    +PrecioBs : decimal
+    +Stock : int
+    +CategoriaId : int
+
+    +AgregarProducto()
+    +ActualizarProducto()
+    +EliminarProducto()
+}
+
+class Cliente {
+    +Id : int
+    +Nombre : string
+    +Apellido : string
+    +CedulaIdentidad : string
+    +Telefono : string
+
+    +RegistrarCliente()
+    +ActualizarCliente()
 }
 
 class Venta {
     +Id : int
     +FechaVenta : DateTime
-    +Cantidad : int
+    +TotalVentaBs : decimal
+    +ClienteId : int
+
+    +RegistrarVenta()
+    +CalcularTotal()
 }
 
-Producto --> Categoria : pertenece a
-Venta --> Producto : registra
+class DetalleVenta {
+    +Id : int
+    +Cantidad : int
+    +PrecioUnitarioBs : decimal
+    +SubtotalBs : decimal
+    +ProductoId : int
+    +VentaId : int
+
+    +CalcularSubtotal()
+}
+
+Categoria "1" -- "0..*" Producto : clasifica
+Cliente "1" -- "0..*" Venta : realiza
+Venta "1" -- "1..*" DetalleVenta : contiene
+Producto "1" -- "0..*" DetalleVenta : vendido en
 
 @enduml
