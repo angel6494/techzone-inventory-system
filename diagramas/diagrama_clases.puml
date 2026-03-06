@@ -1,0 +1,26 @@
+@startuml
+
+class Producto {
+    +Id : int
+    +Nombre : string
+    +Marca : string
+    +Precio : decimal
+    +Stock : int
+}
+
+class Categoria {
+    +Id : int
+    +Nombre : string
+    +Descripcion : string
+}
+
+class Venta {
+    +Id : int
+    +FechaVenta : DateTime
+    +Cantidad : int
+}
+
+Producto --> Categoria : pertenece a
+Venta --> Producto : registra
+
+@enduml
