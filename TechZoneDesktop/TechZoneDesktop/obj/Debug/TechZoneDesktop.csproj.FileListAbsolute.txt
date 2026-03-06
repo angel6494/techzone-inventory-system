@@ -1,0 +1,9 @@
+E:\01.Estudiantes\Downloads\actividad8\TechZoneDesktop\TechZoneDesktop\bin\Debug\TechZoneDesktop.exe.config
+E:\01.Estudiantes\Downloads\actividad8\TechZoneDesktop\TechZoneDesktop\bin\Debug\TechZoneDesktop.exe
+E:\01.Estudiantes\Downloads\actividad8\TechZoneDesktop\TechZoneDesktop\bin\Debug\TechZoneDesktop.pdb
+E:\01.Estudiantes\Downloads\actividad8\TechZoneDesktop\TechZoneDesktop\obj\Debug\TechZoneDesktop.csproj.AssemblyReference.cache
+E:\01.Estudiantes\Downloads\actividad8\TechZoneDesktop\TechZoneDesktop\obj\Debug\TechZoneDesktop.Properties.Resources.resources
+E:\01.Estudiantes\Downloads\actividad8\TechZoneDesktop\TechZoneDesktop\obj\Debug\TechZoneDesktop.csproj.GenerateResource.cache
+E:\01.Estudiantes\Downloads\actividad8\TechZoneDesktop\TechZoneDesktop\obj\Debug\TechZoneDesktop.csproj.CoreCompileInputs.cache
+E:\01.Estudiantes\Downloads\actividad8\TechZoneDesktop\TechZoneDesktop\obj\Debug\TechZoneDesktop.exe
+E:\01.Estudiantes\Downloads\actividad8\TechZoneDesktop\TechZoneDesktop\obj\Debug\TechZoneDesktop.pdb
