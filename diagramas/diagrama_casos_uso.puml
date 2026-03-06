@@ -1,0 +1,11 @@
+@startuml
+
+actor Administrador
+
+Administrador --> (Registrar Producto)
+Administrador --> (Consultar Productos)
+Administrador --> (Actualizar Producto)
+Administrador --> (Eliminar Producto)
+Administrador --> (Registrar Venta)
+
+@enduml
