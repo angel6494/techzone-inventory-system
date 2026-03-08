@@ -47,5 +47,11 @@ namespace TechZoneDesktop
             FormVentas form = new FormVentas();
             form.Show();
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            FormHistorialVentas form = new FormHistorialVentas();
+            form.Show();
+        }
     }
 }
