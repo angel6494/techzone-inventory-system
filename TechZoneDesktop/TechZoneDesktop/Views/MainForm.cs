@@ -35,5 +35,11 @@ namespace TechZoneDesktop
         {
             this.Close();
         }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            FormCategorias form = new FormCategorias();
+            form.Show();
+        }
     }
 }

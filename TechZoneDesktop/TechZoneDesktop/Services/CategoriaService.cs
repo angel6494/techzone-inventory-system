@@ -42,5 +42,56 @@ namespace TechZoneDesktop.Services
 
             return lista;
         }
+        public void AgregarCategoria(Categoria categoria)
+        {
+            using (SqlConnection conn = new SqlConnection(connectionString))
+            {
+                string query = @"INSERT INTO Categoria
+                        (NombreCategoria,Descripcion)
+                        VALUES
+                        (@Nombre,@Descripcion)";
+
+                SqlCommand cmd = new SqlCommand(query, conn);
+
+                cmd.Parameters.AddWithValue("@Nombre", categoria.NombreCategoria);
+                cmd.Parameters.AddWithValue("@Descripcion", categoria.Descripcion);
+
+                conn.Open();
+                cmd.ExecuteNonQuery();
+            }
+        }
+        public void ActualizarCategoria(Categoria categoria)
+        {
+            using (SqlConnection conn = new SqlConnection(connectionString))
+            {
+                string query = @"UPDATE Categoria
+                        SET NombreCategoria=@Nombre,
+                            Descripcion=@Descripcion
+                        WHERE IdCategoria=@Id";
+
+                SqlCommand cmd = new SqlCommand(query, conn);
+
+                cmd.Parameters.AddWithValue("@Nombre", categoria.NombreCategoria);
+                cmd.Parameters.AddWithValue("@Descripcion", categoria.Descripcion);
+                cmd.Parameters.AddWithValue("@Id", categoria.IdCategoria);
+
+                conn.Open();
+                cmd.ExecuteNonQuery();
+            }
+        }
+        public void EliminarCategoria(int id)
+        {
+            using (SqlConnection conn = new SqlConnection(connectionString))
+            {
+                string query = "DELETE FROM Categoria WHERE IdCategoria=@Id";
+
+                SqlCommand cmd = new SqlCommand(query, conn);
+
+                cmd.Parameters.AddWithValue("@Id", id);
+
+                conn.Open();
+                cmd.ExecuteNonQuery();
+            }
+        }
     }
 }
