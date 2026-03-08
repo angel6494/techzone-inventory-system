@@ -10,11 +10,26 @@ namespace TechZoneDesktop.Controllers
 {
     public class ClienteController
     {
-        ClienteService clienteService = new ClienteService();
+        ClienteService service = new ClienteService();
+
+        public List<Cliente> ObtenerClientes()
+        {
+            return service.ObtenerClientes();
+        }
 
         public void GuardarCliente(Cliente cliente)
         {
-            clienteService.InsertarCliente(cliente);
+            service.InsertarCliente(cliente);
+        }
+
+        public void ActualizarCliente(Cliente cliente)
+        {
+            service.ActualizarCliente(cliente);
+        }
+
+        public void EliminarCliente(int id)
+        {
+            service.EliminarCliente(id);
         }
     }
 }
