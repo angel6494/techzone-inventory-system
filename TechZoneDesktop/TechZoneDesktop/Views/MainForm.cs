@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using TechZoneDesktop.Models;
+using TechZoneDesktop.Views;
 
 namespace TechZoneDesktop
 {
@@ -15,6 +17,12 @@ namespace TechZoneDesktop
         public MainForm()
         {
             InitializeComponent();
+        }
+
+        private void btnClientes_Click(object sender, EventArgs e)
+        {
+            ClienteForm form = new ClienteForm();
+            form.Show();
         }
     }
 }
