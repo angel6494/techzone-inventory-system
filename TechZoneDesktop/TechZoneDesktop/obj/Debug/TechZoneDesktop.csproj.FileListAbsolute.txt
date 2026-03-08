@@ -7,3 +7,5 @@ E:\UPDS\Desarrollo de sistemas 1\proyecto final\TechZoneDesktop\TechZoneDesktop\
 E:\UPDS\Desarrollo de sistemas 1\proyecto final\TechZoneDesktop\TechZoneDesktop\obj\Debug\TechZoneDesktop.csproj.CoreCompileInputs.cache
 E:\UPDS\Desarrollo de sistemas 1\proyecto final\TechZoneDesktop\TechZoneDesktop\obj\Debug\TechZoneDesktop.exe
 E:\UPDS\Desarrollo de sistemas 1\proyecto final\TechZoneDesktop\TechZoneDesktop\obj\Debug\TechZoneDesktop.pdb
+E:\UPDS\Desarrollo de sistemas 1\proyecto final\TechZoneDesktop\TechZoneDesktop\obj\Debug\TechZoneDesktop.Views.ClienteForm.resources
+E:\UPDS\Desarrollo de sistemas 1\proyecto final\TechZoneDesktop\TechZoneDesktop\obj\Debug\TechZoneDesktop.MainForm.resources
