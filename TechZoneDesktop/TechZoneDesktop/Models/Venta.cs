@@ -8,12 +8,12 @@ namespace TechZoneDesktop.Models
 {
     public class Venta
     {
-        public int Id { get; set; }
+        public int IdVenta { get; set; }
+
+        public int IdCliente { get; set; }
 
         public DateTime FechaVenta { get; set; }
 
-        public decimal TotalVentaBs { get; set; }
-
-        public int ClienteId { get; set; }
+        public decimal TotalBs { get; set; }
     }
 }

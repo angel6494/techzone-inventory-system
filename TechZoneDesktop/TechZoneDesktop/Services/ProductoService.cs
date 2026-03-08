@@ -109,5 +109,21 @@ namespace TechZoneDesktop.Services
                 cmd.ExecuteNonQuery();
             }
         }
+        public void DescontarStock(int idProducto, int cantidad)
+        {
+            string query = "UPDATE Producto SET Stock = Stock - @cantidad WHERE IdProducto = @id";
+
+            using (SqlConnection conn = new SqlConnection(connectionString))
+            {
+                conn.Open();
+
+                SqlCommand cmd = new SqlCommand(query, conn);
+
+                cmd.Parameters.AddWithValue("@cantidad", cantidad);
+                cmd.Parameters.AddWithValue("@id", idProducto);
+
+                cmd.ExecuteNonQuery();
+            }
+        }
     }
 }

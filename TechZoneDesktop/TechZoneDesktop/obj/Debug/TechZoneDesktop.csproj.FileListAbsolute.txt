@@ -11,3 +11,4 @@ E:\UPDS\Desarrollo de sistemas 1\proyecto final\TechZoneDesktop\TechZoneDesktop\
 E:\UPDS\Desarrollo de sistemas 1\proyecto final\TechZoneDesktop\TechZoneDesktop\obj\Debug\TechZoneDesktop.MainForm.resources
 E:\UPDS\Desarrollo de sistemas 1\proyecto final\TechZoneDesktop\TechZoneDesktop\obj\Debug\TechZoneDesktop.Views.FormProductos.resources
 E:\UPDS\Desarrollo de sistemas 1\proyecto final\TechZoneDesktop\TechZoneDesktop\obj\Debug\TechZoneDesktop.Views.FormCategorias.resources
+E:\UPDS\Desarrollo de sistemas 1\proyecto final\TechZoneDesktop\TechZoneDesktop\obj\Debug\TechZoneDesktop.Views.FormVentas.resources
