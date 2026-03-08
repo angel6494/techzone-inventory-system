@@ -24,5 +24,16 @@ namespace TechZoneDesktop
             ClienteForm form = new ClienteForm();
             form.Show();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            FormProductos form = new FormProductos();
+            form.Show();
+        }
+
+        private void btnCerrar_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
