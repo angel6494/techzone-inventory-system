@@ -10,7 +10,7 @@ namespace TechZoneDesktop.Models
     {
         public int Id { get; set; }
 
-        public string Nombre { get; set; }
+        public string NombreProducto { get; set; }
 
         public string Marca { get; set; }
 
@@ -18,6 +18,6 @@ namespace TechZoneDesktop.Models
 
         public int Stock { get; set; }
 
-        public int CategoriaId { get; set; }
+        public int IdCategoria { get; set; }
     }
 }
